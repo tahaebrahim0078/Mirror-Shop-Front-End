@@ -1,0 +1,107 @@
+.descriptionBox{
+    margin: 120px 170px;
+}
+.discriptionBox-navigator{
+    display: flex;
+   
+
+}
+
+.discriptionBox-nan-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    width: 171px;
+    height: 70px;
+    border: 1px solid #d0d0d0;
+}
+.discriptionBox-nan-box.fade{
+      background: #fbfbfb;
+      color:#555 ;
+}
+.discriptionBox-Decription{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border: 1px solid #d0d0d0;
+    padding: 48px;
+    padding-bottom: 70px;
+}
+@media(max-width:1200px){
+    .descriptionBox{
+        margin: 120px 150px;
+    }
+    .discriptionBox-Decription p{
+        font-size: 14px;
+    }
+    .discriptionBox-nan-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        font-weight: 600;
+        width: 150px;
+        height: 60px;
+        border: 1px solid #d0d0d0;
+    }
+}
+@media(max-width:1000px){
+    .descriptionBox{
+        margin: 120px 120px;
+    }
+    .discriptionBox-Decription p{
+        font-size: 14px;
+    }
+    .discriptionBox-nan-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        font-weight: 600;
+        width: 150px;
+        height: 60px;
+        border: 1px solid #d0d0d0;
+    }
+}
+@media(max-width:850px){
+    .descriptionBox{
+        margin: 120px 100px;
+    }
+    .discriptionBox-Decription p{
+        font-size: 13px;
+    }
+    .discriptionBox-nan-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: 600;
+        width: 140px;
+        height: 50px;
+        border: 1px solid #d0d0d0;
+    }
+}
+@media(max-width:500px){
+    .descriptionBox{
+        
+        margin: 120px 80px;
+    }
+    .discriptionBox-Decription p{
+        font-size: 12px;
+        font-weight: 600;
+       
+    }
+    .discriptionBox-nan-box{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: 600;
+        width: 120px;
+        height: 40px;
+        border: 1px solid #d0d0d0;
+    }
+}

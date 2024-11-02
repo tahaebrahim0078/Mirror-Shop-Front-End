@@ -1,0 +1,153 @@
+.Footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer-logo p {
+  color: black;
+  font-size: 46px;
+  font-weight: 700;
+}
+.footer-links {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  color: black;
+  font-size: 20px;
+}
+.footer-links li {
+  cursor: pointer;
+}
+.footer-socila-icon {
+  display: flex;
+  gap: 20px;
+}
+.footer-icon-container {
+  padding: 10px;
+  padding-bottom: 6px;
+  background: #fbfbfb;
+  border: 1px solid #ebebeb;
+}
+.footer-copyRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  margin-bottom: 30px;
+  color: #1a1a1a;
+  font-size: 20px;
+}
+.footer-copyRight hr {
+  width: 80%;
+  border: none;
+
+  border-radius: 10px;
+  height: 10px;
+  
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 166, 0),
+    rgba(255, 0, 0, 0.801),
+    rgb(205, 0, 48)
+  );
+}
+@media (max-width: 1024px) {
+  .footer-logo img {
+    width: 60px;
+  }
+  .footer-logo p {
+    font-size: 35px;
+    margin-right: 50px;
+  }
+  .footer-links li {
+    font-size: 16px;
+    
+  }
+  
+
+  .footer-socila-icon {
+    display: flex;
+    gap: 18px;
+  }
+  .footer-icon-container img{
+    width: 25px;
+  }
+  .footer-copyRight{
+    font-size: 18px;
+  }
+}
+@media (max-width: 800px) {
+    .footer-logo img {
+      width: 50px;
+    }
+    .footer-logo p {
+      font-size: 30px;
+    }
+    .footer-links li {
+      font-size: 14px;
+    }
+    .footer-links{
+        gap: 30px;
+    }
+    .footer-socila-icon {
+        display: flex;
+        gap: 15px;
+      }
+      .footer-icon-container img{
+        width: 20px;
+      }
+      .footer-copyRight{
+        font-size: 16px;
+      }
+      .footer-copyRight hr{
+        width: 60%;
+        height: 6px;
+      }
+  }
+  @media (max-width: 500px) {
+    .footer-logo img {
+      width: 45px;
+    }
+    .footer-logo p {
+      font-size: 30px;
+    }
+    .footer-links li {
+      font-size: 10px;
+      
+    }
+    .footer-links{
+        gap: 10px;
+        padding-right: 30px;
+    }
+    .footer-logo {
+        
+        gap: 10px;
+      }
+      .footer-socila-icon {
+        display: flex;
+        gap: 13px;
+      }
+      .footer-icon-container img{
+        width: 18px;
+      }
+      .footer-copyRight{
+        font-size: 14px;
+      }
+      .footer-copyRight hr{
+        width: 50%;
+        height: 4px;
+      }
+      .copyrgiht{
+        font-size: 10px;
+        font-weight: 500;
+        color: black;
+      }
+  }

@@ -1,0 +1,182 @@
+.logainsignup {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 166, 0),
+    rgba(255, 0, 0, 0.801),
+    rgb(205, 0, 48)
+  );
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+.loginsingun-container {
+  width: 580px;
+  height: 600px;
+  background: linear-gradient(360deg, #ffe4db, white 60%);
+  margin: auto;
+  padding: 40px 60px;
+  border-radius: 40px;
+}
+.loginsingun-container h1 {
+  margin: 20px 0px;
+}
+.logaibsingup-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+  margin-top: 30px;
+}
+.logaibsingup-fields input {
+  height: 72px;
+  width: 100%;
+  padding-left: 20px;
+  border: 1px solid #c9c9c9;
+  outline: none;
+  color: #5c5c5c;
+  font-size: 18px;
+  border-radius: 25px;
+}
+.loginsingun-container button {
+  width: 600px;
+  height: 72px;
+  color: white;
+  background: #ff4141;
+  margin-top: 30px;
+  border: none;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 25px;
+}
+.loginsingup-login {
+  margin-top: 20px;
+  color: #5c5c5c;
+  font-size: 18px;
+  font-weight: 500;
+}
+.loginsingup-login span {
+  color: #ff4141;
+  font-weight: 600;
+}
+.loginsingup-agree {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  gap: 20px;
+  color: #5c5c5c;
+  font-size: 18px;
+  font-weight: 500;
+}
+.CURSOR {
+  cursor: pointer;
+}
+@media (max-width: 1000px) {
+  .loginsingun-container {
+    width: 480px;
+    height: 600px;
+
+    margin: auto;
+    padding: 40px 60px;
+  }
+  .loginsingun-container button {
+    width: 480px;
+    height: 72px;
+    font-size: 20px;
+  }
+  .logaibsingup-fields input {
+    height: 60px;
+    width: 96%;
+    font-size: 20px;
+  }
+  .loginsingup-login {
+    font-size: 16px;
+  }
+  .loginsingun-container h1 {
+    font-size: 25px;
+  }
+  .loginsingup-agree p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 800px) {
+  .loginsingun-container {
+    width: 360px;
+    height: 500px;
+
+    margin: auto;
+    padding: 40px 60px;
+  }
+  .loginsingun-container button {
+    width: 360px;
+    height: 55px;
+    font-size: 16px;
+  }
+  .logaibsingup-fields input {
+    height: 50px;
+    width: 94%;
+    font-size: 16px;
+  }
+  .loginsingup-login {
+    font-size: 16px;
+  }
+  .loginsingun-container h1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .loginsingun-container {
+    width: 270px;
+    height: 500px;
+
+    margin: auto;
+    padding: 40px 60px;
+  }
+  .loginsingun-container button {
+    width: 270px;
+    height: 40px;
+    font-size: 14px;
+  }
+  .logaibsingup-fields input {
+    height: 40px;
+    width: 91%;
+    font-size: 14px;
+  }
+  .loginsingup-login {
+    font-size: 14px;
+  }
+  .loginsingun-container h1 {
+    font-size: 16px;
+  }
+  .loginsingup-agree p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 450px) {
+  .loginsingun-container {
+    width: 200px;
+    height: 450px;
+
+    margin: auto;
+    padding: 40px 60px;
+  }
+  .loginsingun-container button {
+    width: 200px;
+    height: 30px;
+    font-size: 14px;
+  }
+  .logaibsingup-fields input {
+    height: 30px;
+    width: 91%;
+    font-size: 12px;
+  }
+  .loginsingup-login {
+    font-size: 12px;
+  }
+  .loginsingun-container h1 {
+    font-size: 16px;
+  }
+  .loginsingup-agree p {
+    font-size: 12px;
+  }
+}
