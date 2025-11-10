@@ -3,10 +3,10 @@ import "./productDisplay.css";
 import star_icon from "../assets/star_icon.png";
 import star_dull_icon from "../assets/star_dull_icon.png";
 import { ShopContext } from "../../context/ShopeContext";
- 
+
 const ProductDisplay = (props) => {
   const { product } = props;
-  const {addToCart} = useContext(ShopContext);
+  const { addToCart } = useContext(ShopContext);
   return (
     <div className="productDisplay">
       <div className="prodcutDisplay-left">
@@ -52,9 +52,16 @@ const ProductDisplay = (props) => {
             <div>XXL</div>
           </div>
         </div>
-        <button onClick={()=>{addToCart(product.id)}} >ADD TO CART</button>
+        <button
+          onClick={() => {
+            addToCart(product.id);
+          }}
+        >
+          ADD TO CART
+        </button>
         <p className="prodcutDisplay-right-categorey">
-          <span>Category :</span>{product.category} , T-shirt, Crop Top
+          <span>Category :</span>
+          {product.category} , T-shirt, Crop Top
         </p>
         <p className="prodcutDisplay-right-categorey">
           <span>Tags :</span>Modren,Latest

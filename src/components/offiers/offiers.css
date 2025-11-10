@@ -1,6 +1,5 @@
 .offers {
   width: 65%;
-  height: 60vh;
   display: flex;
   margin: auto;
   padding: 0px 140px;
@@ -113,8 +112,7 @@
     }
 
   .offers-right img {
-    width: 100px;
-  }
+display: none;  }
   .offers-left h1 {
     font-size: 28px;
     

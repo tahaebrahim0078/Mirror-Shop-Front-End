@@ -1,9 +1,17 @@
+.main-new-collection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .new-collection{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    width: 80%;
     
 
 

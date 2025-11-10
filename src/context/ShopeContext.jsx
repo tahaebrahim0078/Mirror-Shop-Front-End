@@ -20,57 +20,57 @@ const ShopContextProvider = (props) => {
       .then((response) => response.json())
       .then((data) => setAll_products(data));
 
-      if(localStorage.getItem('auth-token')){
-        fetch('https://mirror-shop-backend-3.onrender.com/getcart',{
-          method:'POST',
-          headers:{
-            Accept:'application/form-data',
-            'auth-token':`${localStorage.getItem('auth-token')}`,
-            'Content-Type':'application/json',
-          },
-          body:""
-        }).then((response)=> response.json()).then((data)=> setCartItem(data))
-      }
-
+    if (localStorage.getItem("auth-token")) {
+      fetch("https://mirror-shop-backend-3.onrender.com/getcart", {
+        method: "POST",
+        headers: {
+          Accept: "application/form-data",
+          "auth-token": `${localStorage.getItem("auth-token")}`,
+          "Content-Type": "application/json",
+        },
+        body: "",
+      })
+        .then((response) => response.json())
+        .then((data) => setCartItem(data));
+    }
   }, []);
-
-  console.log(cartItem);
 
   const addToCart = (itemId) => {
     setCartItem((prev) => ({
       ...prev,
       [itemId]: prev[itemId] + 1,
     }));
-    if(localStorage.getItem('auth-token')){
-      fetch("https://mirror-shop-backend-3.onrender.com/addtocart",{
-        method: 'POST',
-        headers:{
-          Accept:'application/form-data',
-          'auth-token':`${localStorage.getItem('auth-token')}`,
-          'Content-Type':'application/json'
+    if (localStorage.getItem("auth-token")) {
+      fetch("https://mirror-shop-backend-3.onrender.com/addtocart", {
+        method: "POST",
+        headers: {
+          Accept: "application/form-data",
+          "auth-token": `${localStorage.getItem("auth-token")}`,
+          "Content-Type": "application/json",
         },
-        body: JSON.stringify({"itemId":itemId}),
+        body: JSON.stringify({ itemId: itemId }),
       })
-      .then((response)=> response.json()).then((data)=>console.log(data));
+        .then((response) => response.json())
+        .then((data) => console.log(data));
     }
   };
   const removeFromCart = (itemId) => {
-
     setCartItem((prev) => ({
       ...prev,
       [itemId]: prev[itemId] - 1,
     }));
-    if(localStorage.getItem('auth-token')){
-      fetch("https://mirror-shop-backend-3.onrender.com/removefromcart",{
-        method: 'POST',
-        headers:{
-          Accept:'application/form-data',
-          'auth-token':`${localStorage.getItem('auth-token')}`,
-          'Content-Type':'application/json'
+    if (localStorage.getItem("auth-token")) {
+      fetch("https://mirror-shop-backend-3.onrender.com/removefromcart", {
+        method: "POST",
+        headers: {
+          Accept: "application/form-data",
+          "auth-token": `${localStorage.getItem("auth-token")}`,
+          "Content-Type": "application/json",
         },
-        body: JSON.stringify({"itemId":itemId}),
+        body: JSON.stringify({ itemId: itemId }),
       })
-      .then((response)=> response.json()).then((data)=>console.log(data));
+        .then((response) => response.json())
+        .then((data) => console.log(data));
     }
   };
 
